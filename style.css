@@ -1,0 +1,86 @@
+	
+	body {
+	    background:#ddd;
+	    font-family:arial;
+	    font-size:12px;
+	    margin:0;
+	    padding:10px 10px 0 10px;
+	    height:100%;
+	    color:#333;
+	}
+	
+	body.loading {
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-image: url(loading.gif);
+	}
+	
+	#info {
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		border-radius:5px;				
+		background:#fcf8e3;
+		border:1px solid  #fbeed5;
+		width:100%;
+		max-width:900px;
+		margin:0 auto 10px auto;
+	}
+	
+		#info .info-wrapper {
+			padding:10px;
+		}
+		
+		#info a {
+			color:#c09853;
+			text-decoration:none;
+		}
+		
+		#info p {
+			margin:5px 0 0 0;
+		}	
+	
+	#jstwitter {
+		position: relative;
+	}
+	
+		#jstwitter .item {
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+			border-radius:5px;
+			-webkit-box-shadow:0 0 3px 1px rgba(100,100,100,0.2);
+			-moz-box-shadow:0 0 3px 1px rgba(100,100,100,0.2);
+			box-shadow:0 0 3px 1px rgba(100,100,100,0.2);						
+			overflow:hidden;
+			background: #fff;
+		}
+		
+			#jstwitter .tweet-wrapper {
+				padding:10px;
+				-webkit-box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				box-sizing:border-box;								
+		    line-height:16px;				
+			}
+	 
+		#jstwitter .item a {
+		    text-decoration: none;
+		    color: #03a8e5;
+		}
+		
+		#jstwitter .item img {
+				width:100%;
+		}	
+		 
+		#jstwitter .item a:hover {
+		    text-decoration: underline;
+		}
+		 
+		#jstwitter .item .text {
+		    display:block;
+
+		}
+		 
+		#jstwitter .item .time, #jstwitter .tweet .user {
+		    font-style: italic;
+		    color: #666666;		    
+		}
