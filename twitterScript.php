@@ -9,11 +9,10 @@ define('ACCESS_TOKEN_SECRET', 'ZYxpOKZrWm7j9suQJJpQlJ8YdFGrUt51GbdJreVCG4n6R');
 $toa = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
 
 $query = array(
-  "q" => "#bluemoon27 OR #kisschoice"
+  "q" => "#KISSchoice"
 );
 
 $results = $toa->get('search/tweets', $query);
- 
 echo json_encode($results->statuses);
 
 /*

@@ -24,12 +24,3 @@
     $size = '100';
 
     echo json_encode($media->data);
-    
-    /*
-    // Show results
-    // Using for loop will cause error if there are less photos than the limit
-    foreach(array_slice($media->data, 0, $limit) as $data)
-    {
-        // Show photo
-        echo '<p><img src="'.$data->images->thumbnail->url.'" height="'.$size.'" width="'.$size.'" alt="SOME TEXT HERE"></p>';
-    }*/

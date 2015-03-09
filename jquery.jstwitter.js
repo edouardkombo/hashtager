@@ -25,6 +25,7 @@ $(function() {
                 for (var i = 0; i < data.length; i++) {
                     img = '';
                     url = 'http://twitter.com/' + data[i].user.screen_name + '/status/' + data[i].id_str;
+                    console.log(data);
                     try {
                         if (data[i].entities['media']) {
                             img = '<a href="' + url + '" target="_blank"><img src="' + data[i].entities['media'][0].media_url + '" /></a>';
@@ -71,7 +72,9 @@ $(function() {
                 for (var i = 0; i < data.length; i++) {
                     img = '';
                     url = data[i].link;
+                    console.log(data);
                     try {
+                        
                         if (data[i].images.standard_resolution.url) {
                             img = '<a href="' + url + '" target="_blank"><img src="' + data[i].images.standard_resolution.url + '" /></a>';
                         }
